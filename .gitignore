@@ -1,0 +1,13 @@
+*.pth
+*.tif
+*.jpg
+*.csv
+*.txt
+*.wandb
+__pycache__/
+logs/
+result/
+snapshots/
+feature_output/
+wandb/
+test_img/

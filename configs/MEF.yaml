@@ -1,0 +1,12 @@
+
+Datasets: MEF
+
+TRAINING:
+  VAL_DIR_NORMAL: "/disk527/Commondisk/a804_qkf/vscodeproject/data/LLIE_datasets/Nopaired/MEF_png"       # 验证集路径
+  VAL_DIR_LOW: "/disk527/Commondisk/a804_qkf/vscodeproject/data/LLIE_datasets/Nopaired/MEF_png"
+  SAVE_DIR: "snapshots/MEF"         # 模型与日志保存路径
+  VAL_AFTER_EVERY: 1                  # 每多少个 epoch 验证一次
+
+OPTIM:
+  BETA1: 0.9
+  BETA2: 0.999

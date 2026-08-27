@@ -1,0 +1,17 @@
+losses:
+  L1_loss:
+    type: L1_loss
+    weight: 1
+  EdgeLoss:
+    type: EdgeLoss
+    weight: 1
+  VGGLoss:
+    type: VGGLoss
+    weight: 1
+  Light_loss:
+    type: Light_loss
+    weight: 1
+  SSIM_loss:
+    type: SSIM_loss
+    weight: 1
+

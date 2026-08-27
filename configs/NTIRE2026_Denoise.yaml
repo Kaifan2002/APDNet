@@ -1,0 +1,16 @@
+Datasets: NTIRE2026
+TRAINING:
+  EPOCHS_PER_SIZE: [400, 400, 200]   # 每个 patch_size 训练的 epoch 数
+  PATCH_SIZES: [256, 384, 512]       # 训练时用的 patch 尺寸
+  BATCH_SIZES: [12, 8, 4]            # 每个 patch 对应的 batch 大小
+  # VAL_PATCH_SIZE: 512                # 验证时 patch 大小
+  TRAIN_DIR_NORMAL: "/home/temp/NTIRE2026_DENOISE/gtPatchNLL/gtPatchNLL"   # 训练集路径
+  TRAIN_DIR_LOW: "/home/temp/NTIRE2026_DENOISE/inputPatchNLL/inputPatchNLL" 
+  VAL_DIR_NORMAL: "/home/temp/NTIRE2026_DENOISE/val_gt_512"       # 验证集路径
+  VAL_DIR_LOW: "/home/temp/NTIRE2026_DENOISE/val_in_512"
+  SAVE_DIR: "snapshots/NTIRE2026_DENOISE"         # 模型与日志保存路径
+  VAL_AFTER_EVERY: 1                  # 每多少个 epoch 验证一次
+
+OPTIM:
+  BETA1: 0.9
+  BETA2: 0.999
